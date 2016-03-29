@@ -11,18 +11,47 @@
     android:orientation="vertical"
     tools:context="rimp.rild.com.android.gpsloationtest.MainActivity">
 
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
-    <Space
+        android:id="@+id/longitude"
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
-
-    <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/gps_button"
-        android:text="GPS"/>
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_below="@id/longitude"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/geo_time"
+        android:layout_below="@id/latitude"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/provider"
+        android:layout_below="@id/geo_time"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_below="@id/provider"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/enabled"
+        android:layout_below="@id/message"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
